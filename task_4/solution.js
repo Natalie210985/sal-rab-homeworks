@@ -5,10 +5,10 @@ function parseProducts(json) {
 }
 
 function renderProductsCards(json) {
-    clearProducts ();
+    clearProducts();
     let products = parseProducts(json);
-    length = products.length;
-    for (let i = 0; i < length; i += 1) {
+    let length = products.length;
+    for(let i = 0; i < length; i += 1) {
         addProduct(products[i]);
     }
 }
